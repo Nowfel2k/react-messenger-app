@@ -1,0 +1,56 @@
+.messenger__header {
+  text-align: center;
+}
+
+.messenger__header > img {
+  margin-top: 10px;
+  height: 50px;
+  width: 50px;
+}
+
+.messenger__form {
+  padding: 17px;
+  position: fixed;
+  bottom: 0;
+  z-index: 100;
+  background-color: #e9e9eb;
+  width: 100%;
+}
+
+.messenger__formControl {
+  display: flex !important;
+  flex-direction: row !important;
+}
+
+.messenger__input {
+  flex: 0.98;
+}
+
+.messenger__iconButton {
+  flex: 0.02;
+}
+
+@media only screen and (max-width: 1000px) {
+  .messenger__header > img {
+    height: 30px;
+    width: 30px;
+  }
+
+  .messenger__header > h3,
+  .messenger__header > h4 {
+    font-size: 13px;
+  }
+
+  .messenger__form {
+    padding: 5px;
+  }
+
+  .messenger__input {
+    flex: 0.98;
+    font-size: 13px !important;
+  }
+
+  .messenger__iconButton {
+    flex: 0.02;
+  }
+}

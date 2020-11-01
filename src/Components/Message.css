@@ -1,0 +1,58 @@
+.message {
+  padding: 10px;
+  width: fit-content;
+  margin-left: 3px;
+}
+
+.message__container {
+  display: flex;
+  align-items: center;
+}
+
+.message__profileName {
+  margin-bottom: 3px;
+}
+
+.message__profileImage {
+  width: 30px;
+  border-radius: 100%;
+  margin: 5px;
+}
+
+.message:nth-last-child(1) {
+  margin-bottom: 90px;
+}
+
+.message__user {
+  margin-left: auto;
+  color: white;
+  text-align: left !important;
+}
+
+.message__userCard {
+  background-color: #0b81ff !important;
+  /* border-radius: 10% !important; */
+}
+
+.message__guestCard {
+  background-color: #e9e9eb !important;
+}
+
+.image_guest {
+  left: 0;
+}
+
+@media only screen and (max-width: 1000px) {
+  .message__userCard,
+  .message__guestCard {
+    font-size: 10px;
+  }
+
+  .message {
+    padding: 2px;
+  }
+
+  .message__profileImage {
+    margin: 3px;
+  }
+}
