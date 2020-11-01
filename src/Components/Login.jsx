@@ -2,6 +2,7 @@ import React from "react";
 import { auth, provider } from "../firebase";
 import { actionTypes } from "../reducer";
 import { useStateValue } from "../userProvider";
+import "./Login.css";
 
 function Login() {
   // eslint-disable-next-line
@@ -23,9 +24,13 @@ function Login() {
 
   return (
     <div className="login">
-      <img src="" alt="" />
-      <button type="submit" onClick={signIn}>
-        LOGIN
+      <img
+        className="login__logo"
+        src="https://facebookbrand.com/wp-content/uploads/2019/10/Messenger_Logo_Color_RGB.png"
+        alt="loginlogo"
+      />
+      <button className="login__button" type="submit" onClick={signIn}>
+        Login
       </button>
     </div>
   );
